@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["ToGeo",""]],"struct":[["Coordinate",""],["GeometryCollection",""],["LineString",""],["MultiLineString",""],["MultiPoint",""],["MultiPolygon",""],["Point",""],["Polygon",""]],"enum":[["Geometry",""]]});
