@@ -130,15 +130,14 @@ pub fn decode_bbox(hash_str: &str) -> (Coordinate, Coordinate){
     (Coordinate{x: min_lon, y: min_lat}, Coordinate{x: max_lon, y: max_lat})
 }
 
-/// ### Encode latitude, longitude into geohash string
+/// ### Decode geohash string into latitude, longitude pair with error
 ///
 /// Parameters:
 /// Geohash encoded `&str`
 ///
 /// Returns:
-/// A four-element tuple describs a bound box:
-/// * latitude
-/// * longitude
+/// A three-element tuple describing a bounding box:
+/// * Coordinate(latitude, longitude)
 /// * latitude error
 /// * longitude error
 pub fn decode(hash_str: &str) -> (Coordinate, f64, f64) {
